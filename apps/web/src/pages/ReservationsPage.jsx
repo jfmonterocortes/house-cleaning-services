@@ -13,7 +13,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 // ✅ Replace with your Formspree form ID after creating your form at formspree.io
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mpqondwq';
 
 const ReservationsPage = () => {
   const { toast } = useToast();
@@ -114,7 +114,7 @@ const ReservationsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Réservations - House Cleaning Services</title>
+        <title>Réservations - C&N Nettoyage commercial et après construction</title>
         <meta
           name="description"
           content="Réservez votre service de nettoyage professionnel à Québec. Remplissez le formulaire pour obtenir une soumission gratuite."

@@ -42,7 +42,7 @@ const FAQPage = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - House Cleaning Services</title>
+        <title>FAQ - C&N Nettoyage commercial et après construction</title>
         <meta
           name="description"
           content="Questions fréquentes sur nos services de nettoyage à Québec. Trouvez des réponses sur nos horaires, zones desservies, et modalités de service."

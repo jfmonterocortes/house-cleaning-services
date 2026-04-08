@@ -18,14 +18,14 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border shadow-sm">
       <div className="container">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-3 px-3 py-2 rounded-lg bg-muted/30 shadow-sm transition-all duration-200 hover:bg-muted/50">
+        <div className="flex items-center justify-between h-24">
+          <Link to="/" className="flex items-center gap-3 rounded-lg bg-muted/30 shadow-sm transition-all duration-200 hover:bg-muted/50">
             <img
-              src="/HouseCleaningServices.png"
-              alt="House Cleaning Services"
-              className="h-12 w-auto"
+              src="/logo-cn.png"
+              alt="Nettoyage commercial et après construction"
+              className="h-16 w-auto"
             />
-            <span className="text-base font-semibold text-primary hidden sm:inline whitespace-nowrap">House Cleaning Services</span>
+            <span className="text-xl font-bold text-primary hidden sm:inline whitespace-nowrap">Nettoyage commercial et après construction</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -33,7 +33,7 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-base font-medium transition-all duration-200 ${
+                className={`text-lg font-medium transition-all duration-200 ${
                   isActive(link.path)
                     ? 'text-primary border-b-2 border-primary'
                     : 'text-foreground hover:text-primary'
@@ -64,7 +64,7 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`block py-3 text-base font-medium transition-all duration-200 ${
+                className={`block py-3 text-lg font-medium transition-all duration-200 ${
                   isActive(link.path)
                     ? 'text-primary'
                     : 'text-foreground hover:text-primary'

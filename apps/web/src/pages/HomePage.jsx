@@ -120,7 +120,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>House Cleaning Services - Nettoyage professionnel à Québec</title>
+        <title>C&N - Nettoyage commercial et après construction à Québec</title>
         <meta
           name="description"
           content="Service de nettoyage professionnel à Québec et environs. Personnel qualifié, satisfaction garantie. Réservez votre soumission gratuite dès maintenant."

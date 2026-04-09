@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ChefHat, Bath, Waves, Wind, Bed, Sparkles, Award, Users, Shield, ThumbsUp, MapPin, Phone, Mail } from 'lucide-react';
+import { ChefHat, Bath, Waves, Wind, Bed, Sparkles, Award, Users, Shield, ThumbsUp, MapPin, Phone, Mail, Instagram } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ServiceCard from '@/components/ServiceCard.jsx';
@@ -391,6 +391,10 @@ const HomePage = () => {
                 <a href="mailto:cleaningserviceqca@gmail.com" className="flex items-center justify-center gap-2 hover:text-primary transition-colors duration-200">
                   <Mail className="w-5 h-5" />
                   cleaningserviceqca@gmail.com
+                </a>
+                <a href="https://www.instagram.com/cleaningserviceqca" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 hover:text-primary transition-colors duration-200">
+                  <Instagram className="w-5 h-5" />
+                  @cleaningserviceqca
                 </a>
               </div>
             </motion.div>

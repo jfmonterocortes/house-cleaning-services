@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -23,6 +23,15 @@ const Footer = () => {
               >
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">+1 (514) 409-7019</span>
+              </a>
+              <a
+                href="https://www.instagram.com/cleaningserviceqca"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 hover:opacity-80 transition-all duration-200"
+              >
+                <Instagram className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <span className="text-sm">@cleaningserviceqca</span>
               </a>
             </div>
           </div>

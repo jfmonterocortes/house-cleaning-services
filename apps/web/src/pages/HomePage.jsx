@@ -18,49 +18,49 @@ const HomePage = () => {
       icon: ChefHat,
       title: 'Nettoyage de la cuisine',
       description: 'Un nettoyage complet de votre cuisine pour un espace sain et accueillant où préparer vos repas en toute sérénité.',
-      image: 'https://images.unsplash.com/photo-1617228069096-4638a7ffc906'
+      image: 'https://images.unsplash.com/photo-1617228069096-4638a7ffc906?w=600&q=75&auto=format&fit=crop'
     },
     {
       icon: Bath,
       title: 'Nettoyage des salles de bains',
       description: 'Désinfection et nettoyage en profondeur de vos salles de bains pour une hygiène irréprochable.',
-      image: 'https://images.unsplash.com/photo-1694885195469-2f661900901c'
+      image: 'https://images.unsplash.com/photo-1694885195469-2f661900901c?w=600&q=75&auto=format&fit=crop'
     },
     {
       icon: Waves,
       title: 'Lavage des planchers',
       description: 'Lavage professionnel de tous types de planchers pour retrouver leur éclat d\'origine.',
-      image: 'https://images.unsplash.com/photo-1563174378-62b20fb3342d'
+      image: 'https://images.unsplash.com/photo-1563174378-62b20fb3342d?w=600&q=75&auto=format&fit=crop'
     },
     {
       icon: Wind,
       title: 'Aspirateur de tapis',
       description: 'Aspiration minutieuse de vos tapis et moquettes pour éliminer poussière et allergènes.',
-      image: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac'
+      image: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=75&auto=format&fit=crop'
     },
     {
       icon: Bed,
       title: 'Nettoyage des chambres',
       description: 'Un environnement propre et apaisant dans vos chambres pour un repos bien mérité.',
-      image: 'https://images.unsplash.com/photo-1659710601119-e627544437bd'
+      image: 'https://images.unsplash.com/photo-1659710601119-e627544437bd?w=600&q=75&auto=format&fit=crop'
     },
     {
       icon: Sparkles,
       title: 'Dépoussiérage',
       description: 'Dépoussiérage complet de toutes les surfaces pour un intérieur impeccable et sain.',
-      image: 'https://images.unsplash.com/photo-1670344930438-76f21718f334'
+      image: 'https://images.unsplash.com/photo-1670344930438-76f21718f334?w=600&q=75&auto=format&fit=crop'
     },
   ];
 
   const transformations = [
     {
-      before: 'https://images.unsplash.com/photo-1647381518264-97ff1835026f',
-      after: 'https://images.unsplash.com/photo-1699412025743-7fcf93cc0b57',
+      before: 'https://images.unsplash.com/photo-1647381518264-97ff1835026f?w=900&q=75&auto=format&fit=crop',
+      after: 'https://images.unsplash.com/photo-1699412025743-7fcf93cc0b57?w=900&q=75&auto=format&fit=crop',
       title: 'Restauration de salon'
     },
     {
-      before: 'https://images.unsplash.com/photo-1656690278205-1febeb97d664',
-      after: 'https://images.unsplash.com/photo-1670064161367-4c605010ac37',
+      before: 'https://images.unsplash.com/photo-1656690278205-1febeb97d664?w=900&q=75&auto=format&fit=crop',
+      after: 'https://images.unsplash.com/photo-1670064161367-4c605010ac37?w=900&q=75&auto=format&fit=crop',
       title: 'Nettoyage en profondeur'
     }
   ];
@@ -103,7 +103,7 @@ const HomePage = () => {
     },
     {
       rating: 5,
-      quote: 'Merci House Cleaning pour vos services de nettoyage, ils ont laissé ma maison rayonnante et sentait bon.',
+      quote: 'Merci House Cleaning Services pour vos services de nettoyage, ils ont laissé ma maison rayonnante et sentait bon.',
       name: 'Roberto Huerta',
       role: 'Client résidentiel',
     },
@@ -120,7 +120,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>C&N - Nettoyage commercial et après construction à Québec</title>
+        <title>House Cleaning Services - Nettoyage professionnel à Québec</title>
         <meta
           name="description"
           content="Service de nettoyage professionnel à Québec et environs. Personnel qualifié, satisfaction garantie. Réservez votre soumission gratuite dès maintenant."
@@ -135,7 +135,7 @@ const HomePage = () => {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1656122381069-9ec666d95cf1)',
+              backgroundImage: 'url(https://images.unsplash.com/photo-1656122381069-9ec666d95cf1?w=1400&q=75&auto=format&fit=crop)',
             }}
           >
             <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
@@ -388,9 +388,9 @@ const HomePage = () => {
                   <Phone className="w-5 h-5" />
                   +1 (514) 409-7019
                 </a>
-                <a href="mailto:cleaningservicesqca@gmail.com" className="flex items-center justify-center gap-2 hover:text-primary transition-colors duration-200">
+                <a href="mailto:cleaningserviceqca@gmail.com" className="flex items-center justify-center gap-2 hover:text-primary transition-colors duration-200">
                   <Mail className="w-5 h-5" />
-                  cleaningservicesqca@gmail.com
+                  cleaningserviceqca@gmail.com
                 </a>
               </div>
             </motion.div>

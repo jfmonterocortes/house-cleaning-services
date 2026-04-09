@@ -10,6 +10,9 @@ const BeforeAfterSlider = ({ beforeImage, afterImage, beforeLabel = "Avant", aft
       <img
         src={beforeImage}
         alt={beforeLabel}
+        loading="lazy"
+        width="900"
+        height="506"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -21,6 +24,9 @@ const BeforeAfterSlider = ({ beforeImage, afterImage, beforeLabel = "Avant", aft
         <img
           src={afterImage}
           alt={afterLabel}
+          loading="lazy"
+          width="900"
+          height="506"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>

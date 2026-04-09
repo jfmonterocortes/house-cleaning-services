@@ -11,11 +11,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-3">
               <a
-                href="mailto:cleaningservicesqca@gmail.com"
+                href="mailto:cleaningserviceqca@gmail.com"
                 className="flex items-start gap-3 hover:opacity-80 transition-all duration-200"
               >
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span className="text-sm">cleaningservicesqca@gmail.com</span>
+                <span className="text-sm">cleaningserviceqca@gmail.com</span>
               </a>
               <a
                 href="tel:+15144097019"

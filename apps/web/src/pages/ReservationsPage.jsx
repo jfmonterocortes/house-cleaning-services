@@ -25,18 +25,19 @@ const ReservationsPage = () => {
     email: '',
     phone: '',
     address: '',
+    ville: '',
     serviceType: '',
     frequency: '',
+    housingType: '',
     message: '',
   });
 
   const services = [
-    'Nettoyage de la cuisine',
-    'Nettoyage des salles de bains',
-    'Lavage des planchers',
-    'Aspirateur de tapis',
-    'Nettoyage des chambres',
-    'Dépoussiérage',
+    'Nettoyage résidentiel régulier',
+    'Nettoyage résidentiel en profondeur',
+    'Nettoyage après construction/rénovation',
+    'Nettoyage commercial/bureau',
+    'Nettoyage après déménagement (entrée/sortie)',
   ];
 
   const frequencies = [
@@ -44,6 +45,15 @@ const ReservationsPage = () => {
     'Hebdomadaire',
     'Bi-hebdomadaire',
     'Mensuel',
+  ];
+
+  const housingTypes = [
+    'Loft',
+    'Appartement petit (3½ - 4½)',
+    'Appartement grand (5½ - 6½)',
+    'Maison à 1-2 étages',
+    'Maison à 3-4 étages',
+    'Commercial/bureau',
   ];
 
   const handleChange = (e) => {
@@ -81,6 +91,8 @@ const ReservationsPage = () => {
           Adresse: formData.address,
           Service: formData.serviceType,
           Fréquence: formData.frequency,
+          Ville: formData.ville,
+          'Type de logement': formData.housingType,
           Message: formData.message,
         }),
       });
@@ -93,8 +105,10 @@ const ReservationsPage = () => {
           email: '',
           phone: '',
           address: '',
+          ville: '',
           serviceType: '',
           frequency: '',
+          housingType: '',
           message: '',
         });
       } else {
@@ -114,7 +128,7 @@ const ReservationsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Réservations - C&N Nettoyage commercial et après construction</title>
+        <title>Réservations - House Cleaning Services</title>
         <meta
           name="description"
           content="Réservez votre service de nettoyage professionnel à Québec. Remplissez le formulaire pour obtenir une soumission gratuite."
@@ -226,20 +240,37 @@ const ReservationsPage = () => {
                       </div>
                     </div>
 
-                    <div className="space-y-2">
-                      <Label htmlFor="address">
-                        Adresse avec code postal <span className="text-destructive">*</span>
-                      </Label>
-                      <Input
-                        id="address"
-                        name="address"
-                        type="text"
-                        value={formData.address}
-                        onChange={handleChange}
-                        required
-                        className="text-gray-900"
-                        placeholder="123 rue Exemple, Québec, QC G1A 1A1"
-                      />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="address">
+                          Adresse avec code postal <span className="text-destructive">*</span>
+                        </Label>
+                        <Input
+                          id="address"
+                          name="address"
+                          type="text"
+                          value={formData.address}
+                          onChange={handleChange}
+                          required
+                          className="text-gray-900"
+                          placeholder="123 rue Exemple, QC G1A 1A1"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="ville">
+                          Ville <span className="text-destructive">*</span>
+                        </Label>
+                        <Input
+                          id="ville"
+                          name="ville"
+                          type="text"
+                          value={formData.ville}
+                          onChange={handleChange}
+                          required
+                          className="text-gray-900"
+                          placeholder="Québec, Lévis..."
+                        />
+                      </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -283,6 +314,31 @@ const ReservationsPage = () => {
                           </SelectContent>
                         </Select>
                       </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="housingType">
+                        Type de logement <span className="text-destructive">*</span>
+                      </Label>
+                      <p className="text-sm text-amber-600 font-medium">
+                        👉 Veuillez noter: le sous-sol compte comme un étage.
+                      </p>
+                      <Select
+                        value={formData.housingType}
+                        onValueChange={(value) => handleSelectChange('housingType', value)}
+                        required
+                      >
+                        <SelectTrigger id="housingType" className="text-gray-900">
+                          <SelectValue placeholder="Sélectionnez un type de logement" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {housingTypes.map((type) => (
+                            <SelectItem key={type} value={type}>
+                              {type}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div className="space-y-2">

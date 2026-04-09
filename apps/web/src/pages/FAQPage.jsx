@@ -25,7 +25,7 @@ const FAQPage = () => {
     },
     {
       question: 'Comment puis-je réserver vos services ?',
-      answer: 'Vous pouvez réserver en remplissant notre formulaire de réservation en ligne, en nous appelant au +1 (514) 409-7019, ou en nous envoyant un email à cleaningservicesqca@gmail.com. Nous vous contacterons rapidement pour confirmer votre rendez-vous.',
+      answer: 'Vous pouvez réserver en remplissant notre formulaire de réservation en ligne, en nous appelant au +1 (514) 409-7019, ou en nous envoyant un email à cleaningserviceqca@gmail.com. Nous vous contacterons rapidement pour confirmer votre rendez-vous.',
     },
     {
       question: 'Nettoyez-vous également les bureaux et locaux commerciaux ?',
@@ -42,7 +42,7 @@ const FAQPage = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - C&N Nettoyage commercial et après construction</title>
+        <title>FAQ - House Cleaning Services</title>
         <meta
           name="description"
           content="Questions fréquentes sur nos services de nettoyage à Québec. Trouvez des réponses sur nos horaires, zones desservies, et modalités de service."
@@ -151,9 +151,9 @@ const FAQPage = () => {
                     <Phone className="w-4 h-4 inline mr-2" />
                     +1 (514) 409-7019
                   </a>
-                  <a href="mailto:cleaningservicesqca@gmail.com" className="hover:opacity-80 transition-all duration-200">
+                  <a href="mailto:cleaningserviceqca@gmail.com" className="hover:opacity-80 transition-all duration-200">
                     <Mail className="w-4 h-4 inline mr-2" />
-                    cleaningservicesqca@gmail.com
+                    cleaningserviceqca@gmail.com
                   </a>
                 </div>
               </CardContent>

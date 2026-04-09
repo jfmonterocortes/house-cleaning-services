@@ -21,11 +21,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-24">
           <Link to="/" className="flex items-center gap-3 rounded-lg bg-muted/30 shadow-sm transition-all duration-200 hover:bg-muted/50">
             <img
-              src="/logo-cn.png"
-              alt="Nettoyage commercial et après construction"
+              src="/logo-nc.png"
+              alt="House Cleaning Services"
               className="h-16 w-auto"
             />
-            <span className="text-xl font-bold text-primary hidden sm:inline whitespace-nowrap">Nettoyage commercial et après construction</span>
+            <span className="text-sm sm:text-xl font-bold text-primary whitespace-nowrap">House Cleaning Services</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
